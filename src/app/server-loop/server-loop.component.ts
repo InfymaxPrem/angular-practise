@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-server-loop',
@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./server-loop.component.css']
 })
 export class ServerLoopComponent implements OnInit {
+  @Input() element: { type: string, name: string, content: string }
 
   constructor() { }
 
